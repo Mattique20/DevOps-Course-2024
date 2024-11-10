@@ -1,4 +1,4 @@
-# DevOps-Course-2024
+## DevOps-Course-2024
 This repository contains all the work required for the DevOps Assignment. 
 -  A guide to your learning and contribution to this field
 -  Summaries of recent blogs.
@@ -10,7 +10,7 @@ This repository contains all the work required for the DevOps Assignment.
 During the course, we weren't just told to consume knowledge via the instructor's lectures. We were instructed to show initiative, research topics that we found interesting, and write articles about them. This not only helped us gain better insight but also helped future students looking to improve their DevOps skills.
 Some of the articles are listed below.
 - [Building and Optimizing Beowulf Clusters with Docker on Windows](https://medium.com/@mattique02/building-and-optimizing-beowulf-clusters-with-docker-on-windows-1b1e83532c27)
-- [An Introduction to Kubernetes: Simplifying Container Orchestration](https://medium.com/@mattique02/an-introduction-to-kubernetes-simplifying-container-orchestration-d7cd9f3a4c7f) 
+- [An Introduction to Kubernetes: Simplifying Container Orchestration](https://medium.com/@mattique02/an-introduction-to-kubernetes-simplifying-container-orchestration-d7cd9f3a4c7f)
 
 ### Growing on the fundamentals 
 The next logical step was to build on the knowledge gained so far and move on to more complex topics. Such skills and topics are mentioned below. 
@@ -43,3 +43,31 @@ The next logical step was to build on the knowledge gained so far and move on to
   </ul>
 
   
+## Summary of the blogs
+### [Building and Optimizing Beowulf Clusters with Docker on Windows](https://medium.com/@mattique02/building-and-optimizing-beowulf-clusters-with-docker-on-windows-1b1e83532c27)
+In today’s tech landscape, high-performance computing (HPC) is increasingly necessary for tasks like AI model training and big data analysis. Beowulf clusters, which link multiple computers to function as a single computing system, provide a scalable, efficient solution for these computational needs. This blog post explores how Docker simplifies the process of creating and managing Beowulf clusters on Windows.
+
+**The Beowulf Cluster Concept:** Beowulf clusters distribute complex tasks across multiple nodes, achieving faster computation through parallel processing. Each node, connected via high-speed networks, executes subtasks simultaneously, making it ideal for large or time-consuming tasks.
+
+**Synergy between Docker and Beowulf Clusters:** Docker enhances Beowulf clusters by packaging required software into Docker images, making deployment and maintenance easier. Its portability allows containers to be transferred between machines, improving cluster flexibility. Docker’s lightweight nature means higher processing power with less overhead, and its isolation feature ensures stable, predictable node operations. Scaling Dockerized clusters is also straightforward, as containers can be easily added or removed based on computational needs.
+
+**Building a Beowulf Cluster on Windows:** The guide uses the Windows Subsystem for Linux (WSL) to create a Linux environment on Windows for Docker and the cluster setup.
+
+**Conclusion:** Dockerized Beowulf clusters present a powerful yet accessible HPC solution. By combining distributed computing with Docker’s strengths, complex computational problems can be tackled more effectively and efficiently.
+### [An Introduction to Kubernetes: Simplifying Container Orchestration](https://medium.com/@mattique02/an-introduction-to-kubernetes-simplifying-container-orchestration-d7cd9f3a4c7f)
+In today’s shift from monolithic to microservices-based applications, Kubernetes has emerged as a key tool for container orchestration. Developed by Google, Kubernetes simplifies the deployment and management of containerized applications, automating scaling and self-healing.
+
+**What is Kubernetes?**  
+Kubernetes is an open-source platform that automates the deployment, scaling, and management of containerized applications, making it ideal for handling microservices architectures.
+
+**Architecture Overview:**  
+Kubernetes uses a distributed architecture with a Master Node and multiple Worker Nodes, designed for scalability, resilience, and automation. The Master Node manages scheduling, monitoring, and maintaining the desired state of applications through core components like the API Server, Scheduler, and Controller Manager. Worker Nodes run applications within Pods, managed by Kubelet and Kube-proxy, which handle pod functionality and networking.
+
+**Container Resource Monitoring:**  
+Kubernetes offers tools like the Metrics Server to monitor CPU, memory, and other resources, ensuring efficient resource usage. This system allows Kubernetes to allocate resources dynamically based on demand, preventing both bottlenecks and resource wastage. Real-time monitoring also enables Kubernetes to autoscale applications based on traffic and workload.
+
+**Personalized Resource Management:**  
+Through YAML configurations, Kubernetes allows developers to set resource requests and limits for each container, optimizing resource allocation. This customization helps ensure applications use resources effectively without exceeding defined limits.
+
+**Conclusion:**  
+Kubernetes has revolutionized container orchestration, enabling seamless deployment and management of microservices with automated resource allocation and scaling. Its distributed architecture and advanced resource monitoring make it essential for modern, cloud-native applications, providing programmers and organizations a powerful tool to enhance application efficiency, flexibility, and scalability.
