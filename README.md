@@ -27,14 +27,14 @@ The next logical step was to build on the knowledge gained so far and move on to
 <p><strong>GitHub Actions</strong> has transformed my approach to automation, enabling me to build robust CI/CD pipelines that streamline various workflows. By creating custom workflows for testing, building, and deploying code, I’ve minimized manual intervention and improved consistency across deployment cycles. GitHub Actions supports conditional workflows, allowing me to trigger actions based on specific events such as commits, pull requests, or tag releases. This has been instrumental in automating testing and deployment across multiple branches, ensuring that code quality is maintained without delay. I’ve also integrated GitHub Actions with third-party services, providing notifications and analytics for pipeline runs. Using Actions has allowed me to automate processes, maintain a high standard of quality control, and deliver features faster by reducing the overhead associated with manual deployment and testing.</p> 
 <h2>Challenges and Solutions</h2> 
 <p>Throughout my DevOps journey, I’ve encountered various challenges that tested my problem-solving skills. Setting up Kubernetes was initially daunting, with steep learning curves around managing clusters, configuring network policies, and ensuring secure access. Through persistent troubleshooting and researching best practices, I was able to grasp Kubernetes' underlying principles and leverage it to its full potential. Containerization also posed challenges, especially when managing dependencies across different environments. By adopting multi-stage builds and optimizing image sizes, I was able to mitigate issues with resource usage and runtime performance. Lastly, setting up CI/CD pipelines required balancing flexibility with stability, but over time, I learned to configure pipelines that are resilient, scalable, and maintainable. These experiences strengthened my skills in configuration management, debugging, and process optimization, which are now invaluable to my DevOps toolkit.</p>
-<h2>Future Goals</h2>
+<h3>Future Goals</h3>
 <p>Looking ahead, I am eager to continue advancing my DevOps expertise by achieving several key goals:</p> 
   <ul> 
     <li>Pursuing certifications like the <em>Kubernetes and Cloud Native Associate (KCNA)</em> to formally validate my skills and deepen my knowledge of cloud-native technologies.</li> 
     <li>Focusing on advanced topics, such as monitoring and observability, which are critical for maintaining highly available applications, as well as exploring service mesh integrations and cloud-native security to ensure secure, reliable systems.</li> 
     <li>Contributing to open-source projects related to DevOps to further hone my skills, collaborate with the community, and share my knowledge with others.</li> 
   </ul>
-<h2>Additional Resources</h2>
+<h3>Additional Resources</h3>
 <p>If you’re interested in learning more about DevOps, here are some helpful resources that I frequently refer to:</p>
   <ul> 
     <li><a href="https://kubernetes.io/docs/">Kubernetes Documentation</a> - A comprehensive guide to Kubernetes, covering everything from basic concepts to advanced deployment scenarios.</li> 
