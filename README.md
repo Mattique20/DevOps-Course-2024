@@ -6,12 +6,13 @@ This repository contains all the work required for the DevOps Assignment.
 -  Expanded guidance based on existing knowledge
 
 ##  A Guide to Learning and Contribution:
+---
 ### Gaining and sharing Fundamental knowledge of DevOps
 During the course, we weren't just told to consume knowledge via the instructor's lectures. We were instructed to show initiative, research topics that we found interesting, and write articles about them. This not only helped us gain better insight but also helped future students looking to improve their DevOps skills.
 Some of the articles are listed below.
 - [Building and Optimizing Beowulf Clusters with Docker on Windows](https://medium.com/@mattique02/building-and-optimizing-beowulf-clusters-with-docker-on-windows-1b1e83532c27)
 - [An Introduction to Kubernetes: Simplifying Container Orchestration](https://medium.com/@mattique02/an-introduction-to-kubernetes-simplifying-container-orchestration-d7cd9f3a4c7f)
-
+---
 ### Growing on the fundamentals 
 The next logical step was to build on the knowledge gained so far and move on to more complex topics. Such skills and topics are mentioned below. 
 
@@ -26,7 +27,8 @@ The next logical step was to build on the knowledge gained so far and move on to
 <h3>5. GitHub Actions</h3> 
 <p><strong>GitHub Actions</strong> has transformed my approach to automation, enabling me to build robust CI/CD pipelines that streamline various workflows. By creating custom workflows for testing, building, and deploying code, I’ve minimized manual intervention and improved consistency across deployment cycles. GitHub Actions supports conditional workflows, allowing me to trigger actions based on specific events such as commits, pull requests, or tag releases. This has been instrumental in automating testing and deployment across multiple branches, ensuring that code quality is maintained without delay. I’ve also integrated GitHub Actions with third-party services, providing notifications and analytics for pipeline runs. Using Actions has allowed me to automate processes, maintain a high standard of quality control, and deliver features faster by reducing the overhead associated with manual deployment and testing.</p> 
 <h2>Challenges and Solutions</h2> 
-<p>Throughout my DevOps journey, I’ve encountered various challenges that tested my problem-solving skills. Setting up Kubernetes was initially daunting, with steep learning curves around managing clusters, configuring network policies, and ensuring secure access. Through persistent troubleshooting and researching best practices, I was able to grasp Kubernetes' underlying principles and leverage it to its full potential. Containerization also posed challenges, especially when managing dependencies across different environments. By adopting multi-stage builds and optimizing image sizes, I was able to mitigate issues with resource usage and runtime performance. Lastly, setting up CI/CD pipelines required balancing flexibility with stability, but over time, I learned to configure pipelines that are resilient, scalable, and maintainable. These experiences strengthened my skills in configuration management, debugging, and process optimization, which are now invaluable to my DevOps toolkit.</p>
+<p>Throughout my DevOps journey, I’ve encountered various challenges that tested my problem-solving skills. Setting up Kubernetes was initially daunting, with steep learning curves around managing clusters, configuring network policies, and ensuring secure access. Through persistent troubleshooting and researching best practices, I was able to grasp Kubernetes' underlying principles and leverage them to their full potential. Containerization also posed challenges, especially when managing dependencies across different environments. By adopting multi-stage builds and optimizing image sizes, I was able to mitigate issues with resource usage and runtime performance. Lastly, setting up CI/CD pipelines required balancing flexibility with stability, but over time, I learned to configure pipelines that are resilient, scalable, and maintainable. These experiences strengthened my skills in configuration management, debugging, and process optimization, which are now invaluable to my DevOps toolkit.</p>
+---
 <h3>Future Goals</h3>
 <p>Looking ahead, I am eager to continue advancing my DevOps expertise by achieving several key goals:</p> 
   <ul> 
@@ -34,6 +36,7 @@ The next logical step was to build on the knowledge gained so far and move on to
     <li>Focusing on advanced topics, such as monitoring and observability, which are critical for maintaining highly available applications, as well as exploring service mesh integrations and cloud-native security to ensure secure, reliable systems.</li> 
     <li>Contributing to open-source projects related to DevOps to further hone my skills, collaborate with the community, and share my knowledge with others.</li> 
   </ul>
+---
 <h3>Additional Resources</h3>
 <p>If you’re interested in learning more about DevOps, here are some helpful resources that I frequently refer to:</p>
   <ul> 
@@ -54,6 +57,8 @@ In today’s tech landscape, high-performance computing (HPC) is increasingly ne
 **Building a Beowulf Cluster on Windows:** The guide uses the Windows Subsystem for Linux (WSL) to create a Linux environment on Windows for Docker and the cluster setup.
 
 **Conclusion:** Dockerized Beowulf clusters present a powerful yet accessible HPC solution. By combining distributed computing with Docker’s strengths, complex computational problems can be tackled more effectively and efficiently.
+
+---
 ### [An Introduction to Kubernetes: Simplifying Container Orchestration](https://medium.com/@mattique02/an-introduction-to-kubernetes-simplifying-container-orchestration-d7cd9f3a4c7f)
 In today’s shift from monolithic to microservices-based applications, Kubernetes has emerged as a key tool for container orchestration. Developed by Google, Kubernetes simplifies the deployment and management of containerized applications, automating scaling and self-healing.
 
@@ -70,4 +75,31 @@ Kubernetes offers tools like the Metrics Server to monitor CPU, memory, and othe
 Through YAML configurations, Kubernetes allows developers to set resource requests and limits for each container, optimizing resource allocation. This customization helps ensure applications use resources effectively without exceeding defined limits.
 
 **Conclusion:**  
-Kubernetes has revolutionized container orchestration, enabling seamless deployment and management of microservices with automated resource allocation and scaling. Its distributed architecture and advanced resource monitoring make it essential for modern, cloud-native applications, providing programmers and organizations a powerful tool to enhance application efficiency, flexibility, and scalability.
+Kubernetes has revolutionized container orchestration, enabling seamless deployment and management of microservices with automated resource allocation and scaling. Its distributed architecture and advanced resource monitoring make it essential for modern, cloud-native applications, providing programmers and organizations with a powerful tool to enhance application efficiency, flexibility, and scalability.
+
+---
+## Sample repo from the internet and applying DevOps tooling
+### FTP Deploy Action
+#### Deploys a GitHub project to a FTP server using GitHub actions
+The main purpose of the repository is to demonstrate and allow for easy-to-use deployment of projects to FTP servers using GitHub Actions.
+**Project Repository:** [FTP Deploy Action](https://github.com/SamKirkland/FTP-Deploy-Action)
+
+--- 
+### Requirements
+- You must have ftp access to your server. If your host allows or requires ssh please use my [web-deploy](https://github.com/SamKirkland/web-deploy) action
+- Some web hosts change the default port (21), check with your host for your port number
+
+---
+
+### Setup Steps
+1. Select the repository you want to add the action to
+2. Select the `Actions` tab
+3. Select `Blank workflow file` or `Set up a workflow yourself`, if you don't see these options manually create a yaml file `Your_Project/.github/workflows/main.yml`
+4. Paste the example above into your yaml file and save
+5. Now you need to add a key to the `secrets` section in your project. To add a `secret` go to the `Settings` tab in your project then select `Secrets`. Add a new `Secret` for `password`
+6. Update your yaml file settings
+7. If you appreciate this github action give it a :star: or show off with one of the [badges below](#badge).
+
+---
+This will now allow you to launch projects safely and securely onto an FTP server using GitHub Actions.
+
