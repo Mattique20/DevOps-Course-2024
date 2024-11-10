@@ -107,3 +107,10 @@ The main purpose of the repository is to demonstrate and allow for easy-to-use d
 ---
 This will now allow you to launch projects safely and securely onto an FTP server using GitHub Actions.
 
+---
+
+## My Resume 
+You can view my Resume by using the link below:
+
+[Resume](https://github.com/Mattique20/DevOps-Course-2024/blob/main/Mohammad_Attique_Resume.pdf)
+
